@@ -45,7 +45,6 @@ class ConnectedForm extends Component {
           <input
             type="text"
             className="form-control"
-            // id="title"
             value={title}
             onChange={this.handleTitle}
           />
@@ -53,7 +52,6 @@ class ConnectedForm extends Component {
           <textarea
             type="text"
             className="form-control"
-            // id="title"
             value={description}
             onChange={this.handleDescription}
           />

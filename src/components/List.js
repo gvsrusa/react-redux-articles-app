@@ -29,6 +29,14 @@ const connectedList = ({ articles, removeArticle }) => {
           >
             Delete
           </button>
+
+          <button
+            type="button"
+            className="btn btn-primary btn-sm"
+            onClick={removeHandler.bind(this, el.id)}
+          >
+            Edit
+          </button>
         </li>
       ))}
     </ul>
