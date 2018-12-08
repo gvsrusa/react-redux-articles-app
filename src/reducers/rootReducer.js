@@ -1,12 +1,12 @@
 import {
   ADD_ARTICLE,
   REMOVE_ARTICLE,
-  UPDATE_ARTICLE
+  EDIT_ARTICLE
 } from '../actions/constants';
 
 const intialState = {
   articles: [],
-  editId: ''
+  id: ''
 };
 
 const rootReducer = (state = intialState, action) => {
@@ -18,7 +18,7 @@ const rootReducer = (state = intialState, action) => {
         ...state,
         articles: state.articles.filter(article => article.id !== action.id)
       };
-    case UPDATE_ARTICLE:
+    case EDIT_ARTICLE:
       return { ...state, articles: [...state.articles, action.payload] };
     default:
       return state;

@@ -1,4 +1,4 @@
-import { ADD_ARTICLE, REMOVE_ARTICLE, UPDATE_ARTICLE } from './constants';
+import { ADD_ARTICLE, REMOVE_ARTICLE, EDIT_ARTICLE } from './constants';
 
 export const addArticle = article => ({
   type: ADD_ARTICLE,
@@ -10,7 +10,7 @@ export const removeArticle = id => ({
   id
 });
 
-export const updateArticle = (article) => ({
-  type: UPDATE_ARTICLE,
+export const editArticle = (article) => ({
+  type: EDIT_ARTICLE,
   payload: article
 })
